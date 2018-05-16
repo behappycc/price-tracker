@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for blog_crawler project
+# Scrapy settings for books_spider project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'blog_crawler'
+BOT_NAME = 'books_spider'
 
-SPIDER_MODULES = ['blog_crawler.spiders']
-NEWSPIDER_MODULE = 'blog_crawler.spiders'
+SPIDER_MODULES = ['books_spider.spiders']
+NEWSPIDER_MODULE = 'books_spider.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'blog_crawler (+http://www.yourdomain.com)'
+#USER_AGENT = 'books_spider (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = False
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'blog_crawler.middlewares.BlogCrawlerSpiderMiddleware': 543,
+#    'books_spider.middlewares.BooksSpiderSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'blog_crawler.middlewares.BlogCrawlerDownloaderMiddleware': 543,
+#    'books_spider.middlewares.BooksSpiderDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'blog_crawler.pipelines.BlogCrawlerPipeline': 300,
+#    'books_spider.pipelines.BooksSpiderPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
