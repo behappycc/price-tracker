@@ -10,7 +10,7 @@ class BooksSpiderPipeline(object):
     def open_spider(self, spider):
         self.conn = sqlite3.connect ("books.sqlite") 
         self.cur = self.conn.cursor()
-        self.cur.execute("CREATE TABLE if not exists books(title TEXT, author TEXT, price INTEGER)")
+        self.cur.execute("CREATE TABLE IF NOT EXISTS books(title TEXT, author TEXT, price INTEGER)")
         self.cur.execute("DELETE FROM books")
 
     def close_spider(self, spider):
